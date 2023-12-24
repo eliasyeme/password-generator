@@ -1,0 +1,126 @@
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]
+{
+  -moz-appearance: textfield;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #111827;
+    color: #d5d4d8;
+    font-family: 'Inter', sans-serif;   
+}
+
+h1, p {
+    margin: 0;
+}
+
+.container {
+    width: 550px;
+    background: #1f2937;
+    margin: 64px auto;
+    border-radius: 10px;
+    padding: 52px;
+}
+
+.header-title {
+    color: #fff;
+    width: 290px;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.header-title span {
+    color: #4adf86;
+}
+
+.header-text {
+    color: #d5d4d8;
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+.password-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 120px;
+}
+
+.password-length {
+    color: #d5d4d8;
+    background: #273549;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 16px;
+}
+
+.password-length::placeholder {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.check-icon {
+    width: 24px;
+    height: 24px;
+    background: no-repeat url('../assets/check-unchecked.svg');
+    background-position: center;
+    margin-right: 4px;
+}
+
+.check-button {
+    background: none;
+    align-self: flex-start;
+    border: none;
+    color: #d5d4d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.generate-password-button {
+    background: #10b981;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.generate-password-divider {
+    height: 1px;
+    width: 100%;
+    background: #2f3e53;
+}
+
+.generated-password {
+    background: #273549;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    color: #55f991;
+    border-radius: 5px;
+    margin-top: 24px;
+}
+
+.generated-password-copy-button {
+    background: no-repeat url('../assets/Copy.svg');
+    background-position: center;
+    border: none;
+    padding: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+}
