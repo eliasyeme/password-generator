@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1 class="header-title">Generate a <span>random password</span></h1">
+            <p class="header-text">Never use an insecure password again!</p>
+        </div>
+
+        <!-- Password Options -->
+        <div class="password-options-container">
+            <input class="password-length" id="password-length" placeholder="15" type="number">
+            <div class="password-options">
+                <div>
+                    <input class="password-options-checkbox" id="punctuation" name="punctuation" type="checkbox">
+                    <label class="password-options-label" for="punctuation">Punctuation</label>
+                </div>
+                <div>
+                    <input class="password-options-checkbox" id="numbers" name="numbers" type="checkbox">
+                    <label class="password-options-label" for="numbers">Numbers</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Generate Password -->
+        <div class="generate-password-container">
+            <button class="generate-password-button">Generate Passwords</button>
+            <div class="generate-password-divider"></div>
+            <div class="generated-passwords-container">
+                <div class="generated-password">
+                    <p class="generated-password-text">Password 1</p>
+                    <button class="generated-password-copy-button">Copy</button>
+                </div>
+                <div class="generated-password">
+                    <p class="generated-password-text">Password 2</p>
+                    <button class="generated-password-copy-button">Copy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
