@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="app.js" defer></script>
     <title>Password Generator</title>
 </head>
 <body>
@@ -20,11 +21,11 @@
         <!-- Password Options -->
         <div class="password-container">
             <input class="password-length" id="password-length" placeholder="15" type="number">
-                <button class="check-button">
+                <button id="check-punc-el" class="check-button">
                     <div class="check-icon"></div>
                     <span>Punctuations</span>
                 </button>
-                <button class="check-button">
+                <button id="check-num-el" class="check-button">
                     <div class="check-icon"></div>
                     <span>Numbers</span>
                 </button>
@@ -32,16 +33,16 @@
 
         <!-- Generate Password -->
         <div class="generate-password-container">
-            <button class="generate-password-button">Generate Passwords</button>
+            <button id="generate-password-el" class="generate-password-button">Generate Passwords</button>
             <div class="generate-password-divider"></div>
             <div class="generated-passwords-container">
                 <div class="generated-password">
-                    <p class="generated-password-text">Password 1</p>
-                    <button class="generated-password-copy-button"></button>
+                    <p id="password-text-1-el" class="generated-password-text">Password 1</p>
+                    <button id="password-copy-1-el" class="generated-password-copy-button"></button>
                 </div>
                 <div class="generated-password">
-                    <p class="generated-password-text">Password 2</p>
-                    <button class="generated-password-copy-button"></button>
+                    <p id="password-text-2-el" class="generated-password-text">Password 2</p>
+                    <button id="password-copy-2-el" class="generated-password-copy-button"></button>
                 </div>
             </div>
         </div>
